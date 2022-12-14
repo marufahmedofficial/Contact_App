@@ -1,4 +1,5 @@
 import 'package:contact_app/contact_provider.dart';
+import 'package:contact_app/customwidget/contact_item.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
