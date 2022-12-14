@@ -3,7 +3,6 @@ import 'package:contact_app/customwidget/contact_item.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../customwidgets/contact_item.dart';
 
 class HomePage extends StatelessWidget {
   static const String routeName='/';

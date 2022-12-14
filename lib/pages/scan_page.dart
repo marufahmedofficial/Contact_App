@@ -1,7 +1,9 @@
 import 'dart:io';
 import 'package:contact_app/contact_provider.dart';
 import 'package:flutter/material.dart';
-
+import 'package:image_picker/image_picker.dart';
+import 'package:provider/provider.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'image_processing_page.dart';
 
 class ScanPage extends StatefulWidget {

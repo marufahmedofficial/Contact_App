@@ -1,8 +1,7 @@
 import 'package:contact_app/contact_provider.dart';
+import 'package:contact_app/customwidget/ScannedTextItem.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
-import '../customwidgets/ScannedTextItem.dart';
 
 class ImageProcessingPage extends StatefulWidget {
   static const String routeName='/image_processing';

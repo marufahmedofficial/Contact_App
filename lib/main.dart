@@ -3,6 +3,7 @@ import 'package:contact_app/contact_provider.dart';
 import 'package:contact_app/pages/contact_details.dart';
 import 'package:contact_app/pages/homepage.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 
 void main() {

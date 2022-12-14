@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:contact_app/model/contact_model.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class ContactDetails extends StatelessWidget {
   static const String routeName = '/details';
