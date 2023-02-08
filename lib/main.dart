@@ -28,10 +28,10 @@ class MyApp extends StatelessWidget {
       initialRoute: HomePage.routeName,
       builder: EasyLoading.init(),
       routes: {
-        HomePage.routeName : (context) => HomePage(),
-        ContactDetails.routeName : (context) => ContactDetails(),
-        ScanPage.routeName : (context) => ScanPage(),
-        ImageProcessingPage.routeName : (context) => ImageProcessingPage(),
+        HomePage.routeName : (context) => const HomePage(),
+        ContactDetails.routeName : (context) => const ContactDetails(),
+        ScanPage.routeName : (context) => const ScanPage(),
+        ImageProcessingPage.routeName : (context) => const ImageProcessingPage(),
       },
     );
   }
