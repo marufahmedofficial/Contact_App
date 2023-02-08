@@ -2,6 +2,8 @@
 import 'package:contact_app/contact_provider.dart';
 import 'package:contact_app/pages/contact_details.dart';
 import 'package:contact_app/pages/homepage.dart';
+import 'package:contact_app/pages/image_processing_page.dart';
+import 'package:contact_app/pages/scan_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -25,8 +27,10 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: HomePage.routeName,
       routes: {
-        HomePage.routeName : (context) => const HomePage(),
-        ContactDetails.routeName : (context) => const ContactDetails(),
+        HomePage.routeName : (context) => HomePage(),
+        ContactDetails.routeName : (context) => ContactDetails(),
+        ScanPage.routeName : (context) => ScanPage(),
+        ImageProcessingPage.routeName : (context) => ImageProcessingPage(),
       },
     );
   }

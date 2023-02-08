@@ -1,7 +1,8 @@
 import 'package:contact_app/contact_provider.dart';
-import 'package:contact_app/customwidget/ScannedTextItem.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
+import '../customwidget/ScannedTextItem.dart';
 
 class ImageProcessingPage extends StatefulWidget {
   static const String routeName='/image_processing';
@@ -29,33 +30,33 @@ class _ImageProcessingPageState extends State<ImageProcessingPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
-                        children: const [
-                          Text('Name: '),
+                        children: [
+                          const Text('Name: '),
                           Text(''),
                         ],
                       ),
                       Row(
-                        children: const [
-                          Text('Mobile: '),
+                        children: [
+                          const Text('Mobile: '),
                           Text(''),
                         ],
                       ),
                       Row(
-                        children: const [
-                          Text('Email: '),
+                        children: [
+                          const Text('Email: '),
                           Text(''),
                         ],
                       ),
                       Wrap(
 
-                        children: const [
-                          Text('Address: '),
+                        children: [
+                          const Text('Address: '),
                           Text(''),
                         ],
                       ),
                       Row(
-                        children: const [
-                          Text('Website: '),
+                        children: [
+                          const Text('Website: '),
                           Text(''),
                         ],
                       ),

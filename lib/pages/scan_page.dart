@@ -1,9 +1,10 @@
 import 'dart:io';
 import 'package:contact_app/contact_provider.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
-import 'package:flutter_easyloading/flutter_easyloading.dart';
+
 import 'image_processing_page.dart';
 
 class ScanPage extends StatefulWidget {
@@ -63,8 +64,8 @@ class _ScanPageState extends State<ScanPage> {
     final file = await ImagePicker().pickImage(source: source);
     if(file != null) {
       EasyLoading.show(status: 'Processing your image. Please wait', dismissOnTap: false);
-      // ignore: use_build_context_synchronously
-      Provider.of<ContactProvider>(context, listen: false)
+      Provider
+          .of<ContactProvider>(context, listen: false)
           .processCardImage(file.path)
           .then((value) {
         EasyLoading.dismiss();

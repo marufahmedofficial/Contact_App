@@ -1,7 +1,8 @@
 import 'dart:io';
-import 'package:contact_app/model/contact_model.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher_string.dart';
+
+import '../model/contact_model.dart';
 
 class ContactDetails extends StatelessWidget {
   static const String routeName = '/details';
@@ -32,11 +33,11 @@ class ContactDetails extends StatelessWidget {
                   onPressed: () {
                     callContact(contact.mobile);
                   },
-                  icon: const Icon(Icons.call),
+                  icon: Icon(Icons.call),
                 ),
                 IconButton(
                   onPressed: () {},
-                  icon: const Icon(Icons.sms),
+                  icon: Icon(Icons.sms),
                 ),
               ],
             ),
@@ -47,7 +48,7 @@ class ContactDetails extends StatelessWidget {
               onPressed: () {
                 sendEmail(contact.email!);
               },
-              icon: const Icon(Icons.email),
+              icon: Icon(Icons.email),
             ),
           ),
           ListTile(
@@ -56,7 +57,7 @@ class ContactDetails extends StatelessWidget {
               onPressed: () {
                 showMap(contact.streetAddress!);
               },
-              icon: const Icon(Icons.location_on),
+              icon: Icon(Icons.location_on),
             ),
           ),
           ListTile(
@@ -65,7 +66,7 @@ class ContactDetails extends StatelessWidget {
               onPressed: () {
                 showWeb(contact.website!);
               },
-              icon: const Icon(Icons.web),
+              icon: Icon(Icons.web),
             ),
           ),
         ],

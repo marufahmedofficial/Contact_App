@@ -1,7 +1,6 @@
-import 'package:contact_app/model/contact_model.dart';
-import 'package:contact_app/pages/contact_details.dart';
 import 'package:flutter/material.dart';
-
+import '../model/contact_model.dart';
+import '../pages/contact_details.dart';
 
 class ContactItem extends StatelessWidget {
   final ContactModel contact;
