@@ -14,12 +14,16 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(title: const Text('All Contacts'),),
       body: Consumer<ContactProvider>(
         builder: (context, provider, child) => ListView.builder(
+          physics: const BouncingScrollPhysics(),
           itemCount: provider.contactList.length,
           itemBuilder: (context, index) {
             final contact = provider.contactList[index];
-            return ContactItem(contact: contact, onUpdate: (id) {
-              provider.updateFavorite(id);
-            },);
+            return Card(
+              elevation: 5,
+              child: ContactItem(contact: contact, onUpdate: (id) {
+                provider.updateFavorite(id);
+              },),
+            );
           },
         ),
       ),

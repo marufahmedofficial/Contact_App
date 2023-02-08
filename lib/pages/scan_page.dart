@@ -63,8 +63,7 @@ class _ScanPageState extends State<ScanPage> {
     final file = await ImagePicker().pickImage(source: source);
     if(file != null) {
       EasyLoading.show(status: 'Processing your image. Please wait', dismissOnTap: false);
-      Provider
-          .of<ContactProvider>(context, listen: false)
+      Provider.of<ContactProvider>(context, listen: false)
           .processCardImage(file.path)
           .then((value) {
         EasyLoading.dismiss();
