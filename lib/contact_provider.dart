@@ -176,6 +176,14 @@ class ContactProvider extends ChangeNotifier {
         streetAddress: 'Mirpur, Dhaka',
         website: 'flutter.dev',
         image: 'images/person.png'),
+    ContactModel(
+        id: 22,
+        name: 'GHI',
+        mobile: '01711000003',
+        email: 'ghi@gmail.com',
+        streetAddress: 'Mirpur, Dhaka',
+        website: 'flutter.dev',
+        image: 'images/person.png'),
   ];
 
   void updateFavorite(int id) {
