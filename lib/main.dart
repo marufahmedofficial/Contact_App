@@ -1,12 +1,12 @@
-
 import 'package:contact_app/contact_provider.dart';
-import 'package:contact_app/pages/contact_details.dart';
 import 'package:contact_app/pages/homepage.dart';
-import 'package:contact_app/pages/image_processing_page.dart';
 import 'package:contact_app/pages/scan_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:provider/provider.dart';
 
+import 'pages/contact_details.dart';
+import 'pages/image_processing_page.dart';
 
 void main() {
   runApp(ChangeNotifierProvider(
@@ -20,12 +20,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Contact App',
+      title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
       initialRoute: HomePage.routeName,
+      builder: EasyLoading.init(),
       routes: {
         HomePage.routeName : (context) => HomePage(),
         ContactDetails.routeName : (context) => ContactDetails(),
