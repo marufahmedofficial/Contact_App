@@ -29,33 +29,33 @@ class _ImageProcessingPageState extends State<ImageProcessingPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
-                        children: [
-                          const Text('Name: '),
+                        children: const [
+                          Text('Name: '),
                           Text(''),
                         ],
                       ),
                       Row(
-                        children: [
-                          const Text('Mobile: '),
+                        children: const [
+                          Text('Mobile: '),
                           Text(''),
                         ],
                       ),
                       Row(
-                        children: [
-                          const Text('Email: '),
+                        children: const [
+                          Text('Email: '),
                           Text(''),
                         ],
                       ),
                       Wrap(
 
-                        children: [
-                          const Text('Address: '),
+                        children: const [
+                          Text('Address: '),
                           Text(''),
                         ],
                       ),
                       Row(
-                        children: [
-                          const Text('Website: '),
+                        children: const [
+                          Text('Website: '),
                           Text(''),
                         ],
                       ),

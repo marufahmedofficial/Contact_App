@@ -32,11 +32,11 @@ class ContactDetails extends StatelessWidget {
                   onPressed: () {
                     callContact(contact.mobile);
                   },
-                  icon: Icon(Icons.call),
+                  icon: const Icon(Icons.call),
                 ),
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(Icons.sms),
+                  icon: const Icon(Icons.sms),
                 ),
               ],
             ),
@@ -47,7 +47,7 @@ class ContactDetails extends StatelessWidget {
               onPressed: () {
                 sendEmail(contact.email!);
               },
-              icon: Icon(Icons.email),
+              icon: const Icon(Icons.email),
             ),
           ),
           ListTile(
@@ -56,7 +56,7 @@ class ContactDetails extends StatelessWidget {
               onPressed: () {
                 showMap(contact.streetAddress!);
               },
-              icon: Icon(Icons.location_on),
+              icon: const Icon(Icons.location_on),
             ),
           ),
           ListTile(
@@ -65,7 +65,7 @@ class ContactDetails extends StatelessWidget {
               onPressed: () {
                 showWeb(contact.website!);
               },
-              icon: Icon(Icons.web),
+              icon: const Icon(Icons.web),
             ),
           ),
         ],
